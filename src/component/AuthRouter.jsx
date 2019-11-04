@@ -11,7 +11,6 @@ const AuthRoute = ({ component: Component, ...reset }) => {
     <Route
       {...reset}
       render={routerProps => {
-        console.log(routerProps)
         if (userInfo) {
           // 存在，就渲染 要去的页面
           return <Component {...routerProps}></Component>
