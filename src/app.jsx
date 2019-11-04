@@ -1,5 +1,5 @@
 import React from 'react'
-import './global.css'
+import './global.scss'
 import Detail from './page/detail/index.jsx'
 import City from './page/city/index.jsx'
 import Search from './page/search/index.jsx'
