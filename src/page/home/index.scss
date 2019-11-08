@@ -1,8 +1,24 @@
 .home-page {
     height: 100%;
-    background: red;
-    .home-tabbar {
-        height: 50px;
-        background: greenyellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .page-content{
+        height: 682px;
+        overflow-y: auto;
+    }
+    .am-tab-bar{
+        height: 54px;
+    }
+    .am-tab-bar-bar {
+        height: 54px;
+        font-weight: bolder;
+    }
+    .am-tab-bar-tab-title {
+        font-size: 15px;
+        margin-bottom: 2px;
+    }
+    .iconfont {
+        font-size: 24px;
     }
 }

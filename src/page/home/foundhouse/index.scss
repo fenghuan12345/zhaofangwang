@@ -1,4 +1,291 @@
 .home-page-foundhouse {
+    position: relative;
     height: 100%;
-    background: green;
+    overflow: hidden;
+    background: #fff;
+    overflow-y: auto;
+    .header{
+        box-sizing: border-box;
+        padding: 9px 22px;
+        overflow: hidden;
+        background: #fff;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 10;
+        .search-box {
+            display: flex;
+            flex-flow: row;
+            align-items: center;
+            font-size: 14px;
+            >i {
+                display: inline-block;
+                // width: 40px;
+                // height: 40px;
+                margin-left: 7px;
+            }
+            .choose-city{
+                position: relative;
+                padding-right: 16.5px;
+                font-size: 16px;
+                color: #323232;
+                i {
+                    margin-left: 6px;
+                    vertical-align: middle;
+                }
+            }
+            >div {
+                display: inline-block;
+                background: #fff;
+                height: 44px;
+                line-height: 44px;
+                border-radius: 50px;
+                // margin-left: 6px;
+                flex: 1;
+                border: 1px solid #ccc;
+                box-shadow: 0 5px 6px 0 hsla(0,0%,53%,.1);
+                color: #b8bbbd;
+                >i{
+                    margin-left: 10px;
+                    font-size: 16px;
+                }
+                span {
+                    padding-left: 7px;
+                }
+            }
+        }
+    }
+    .homeBody-content{
+        margin-top: 64px;
+        padding: 10px 22px;
+        .btnEntries{
+            display: flex;
+            justify-content: space-between;
+            .btnEntries-item{
+                width: 53px;
+                height: 84px;
+                text-align: center;
+                font-size: 14px;
+                .btnEntries-item-imgBox{
+                    width: 53px;
+                    height: 52px;
+                    text-align: center;
+                    margin-bottom: 12px;
+                    img{
+                        width: 100%;
+                    }
+                    p{
+                        font-size:12px;
+                        color: #393c41;
+                    }
+                }
+            }
+        }
+        .tabEntries{
+            border-radius: 6px;
+            border: 1px solid #e8ebef;
+            margin: 34px 0 22px 0;
+            display: flex;
+            .tabEntries-box:first-of-type{
+                border-right: 1px solid #e8ebef;
+            }
+            .tabEntries-box{
+                box-sizing: border-box;
+                height: 86px;
+                width: 50%;
+                padding:20px 6px 16px 16px;
+                display: flex;
+                justify-content: space-between;
+                .tabEntries-item-left{
+                    p {
+                        font-size: 18px;
+                        font-weight: bold;
+                        color: black;
+                        margin-bottom: 16px;
+                    }
+                    span{
+                        font-size: 14px;
+                        color: #a2acba;
+                    }
+                }
+                .tabEntries-item-right{
+                    text-align: center;
+                    img{
+                        width: 50px;
+                    }
+                }
+            }
+        }
+        .mogoSwiper-container{
+            margin: 0 auto;
+            // overflow: hidden;
+            border-radius: 4px;
+            * { touch-action: none; } 
+            .slider-list{
+                height: 100% !important;
+            }
+            img{
+                width: 100%;
+            }
+        }
+        .widget-part{
+            overflow: hidden;
+            .widget-title{
+                display: flex;
+                justify-content: space-between;
+                font-size: 20px;
+                height: 55px;
+                line-height: 55px;
+                color: #222;
+                width: 100%;
+                overflow: hidden;
+                i{
+                    font-size: 18px;
+                }
+            }
+            .hidden-scroll{
+                position: relative;
+                overflow-y: hidden;
+                .horizontal-list{
+                    width: 100%;
+                    white-space: nowrap;
+                    overflow: auto;
+                    text-overflow: ellipsis;
+                    padding: 6px 2px;
+                }
+                .ka-list-item:last-of-type{
+                    margin-right: 0;
+                }
+                .ka-list-item{
+                    display: inline-block;
+                    margin-right: 20px;
+                    width: 175px;
+                    img{
+                        display: block;
+                        width: 100%;
+                        border-radius: 6px;
+                    }
+                    >div{
+                        padding: 12px 0;
+                        img{
+                            float: left;
+                            width: 38px;
+                            height: 38px;
+                            border-radius: 50%;
+                            margin-right: 6px;
+                        }
+                        h2{
+                            font-size: 16px;
+                            line-height: 16px;
+                            color: #333;
+                            margin-bottom: 6px;
+                        }
+                        h3{
+                            font-size: 12px;
+                            line-height: 14px;
+                            color: #999;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .room-list-component{
+        padding: 0 22px;
+        .room-filter-wrapper{
+            background: #fff;
+            .filter-options{
+                display: flex;
+                height: 55px;
+                line-height: 55px;
+                border-bottom: 1px solid #e5e5e5;
+                i:last-of-type{
+                    color: #323232;
+                }
+                i{
+                    font-size: 20px;
+                    color: #9b9b9b;
+                }
+                .flexbox {
+                    display: flex;
+                    flex-flow: row nowrap;
+                    justify-content: flex-start;
+                    align-items: center;
+                    // width: 75px;
+                    text-align: center;
+                    font-size: 14px;
+                    margin-right: 10px;
+                    padding: 0 10px;
+                    white-space: nowrap;
+                    span{
+                        margin-right: 4px;
+                    }
+                }
+            }
+        }
+        .room-card-wrapper {
+            .loading{
+                height: 26px;
+                line-height: 26px;
+                font-size: 18px;
+                text-align: center;
+            }
+            .room-cart{
+                padding: 22px 0;
+                border-bottom: 1px solid #e5e5e5;
+                .room-card-flexbox{
+                    display: flex;
+                    align-items: flex-start;
+                    >img{
+                        margin-right: 16px;
+                        width: 134px;
+                        height: 100px;
+                        border-radius: 10px;
+                    }
+                    .flexbox-item{
+                        min-width: 218px;
+                        flex: 1;
+                        .room-card-title{
+                            height: 18px;
+                            line-height: 18px;
+                            font-size: 16px;
+                            font-weight: bolder;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                        }
+                        .room-card-info{
+                            i{
+                                font-size: 16px;
+                            }
+                            vertical-align: middle;
+                            height: 16px;
+                            line-height: 16px;
+                            font-size: 14px;
+                            margin-top: 10px;
+                        }
+                        .room-card-lable{
+                            margin-top: 10px;
+                            img:first-of-type{
+                                margin-left: 0;
+                            }
+                            img{
+                                height: 20px;
+                                margin-left: 5px;
+                            }
+                        }
+                        .room-card-price{
+                            margin-top: 12px;
+                            color: #f65000;
+                            .room-card-price-number{
+                                font-size: 20px;
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
 }
