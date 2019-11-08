@@ -1,0 +1,321 @@
+@import '../../asstes//style/mixins.scss';
+.page-detail{
+  height: 100%;
+  // 遮罩层
+  .mask{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.7);
+    z-index: 999;
+
+  }
+  .swiper-container{
+    height: 310px;
+    img{
+      width: 100%;
+    }
+  }
+  .main{
+    margin-bottom: 80px;
+    color: #333;
+    padding: 20px 20px;
+    #title{
+      font-weight:bolder ;
+      font-size: 22px;
+    }
+
+    .detailInfo{
+      @include border-top;
+      @include border-bottom;
+      padding: 20px 0 ;
+      display: flex;
+      justify-content: space-around;
+      align-content: center;
+
+    >div{
+      flex: 1;
+
+      text-align: center;
+      .top{
+        color: #ff7000;
+        font-size: 18px;
+      }
+
+      .bottom{
+        font-size: 16px;
+        span{
+          color: #999;
+          font-size: 14px;
+        }
+      }
+    }
+
+    .tips{
+      width: 340px;
+      height: 160px;
+      background:whitesmoke;
+      border-radius: 20px;
+      position: fixed;
+      z-index: 999;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+      padding: 40px 10px;
+
+      button{
+        position: absolute;
+        right: 10px;
+        top: 5px;
+      }
+
+      p{
+        text-align:left
+      }
+    }
+  }
+
+  .roomdetail{
+      .ul1{
+        margin-top: 20px;
+        display: flex;
+        >li{
+          margin: 0 15px 10px 0 ;
+          padding: 5px 8px;
+          border:1px solid #a0accb ;
+          color: #a0accb;
+        }
+      }
+
+      .ul2{
+        padding-bottom: 10px;
+        @include border-bottom;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        >li{
+          width: 50%;
+          height: 30px;
+          color: #999;
+
+          span{
+            color: #666;
+          }
+        }
+      }
+  }
+
+  .map{
+    padding-bottom: 20px;
+    @include border-bottom;
+    h1{
+      font-weight: bolder;
+      font-size: 22px;
+    }
+
+    p{
+      color: #999;
+      line-height: 30px;
+      margin: 0;
+
+      span{
+        margin-left: 8px;
+      }
+    }
+
+    img{
+      width: 100%;
+    }
+  }
+
+
+  .roomconfig{
+    padding-bottom: 5px;
+    @include border-bottom;
+    p{
+      text-align: center;
+      font-size: 18px;
+      color: #a0accb;
+      margin-top: 5px;
+    }
+    ul{
+      display: flex;
+      flex-wrap: wrap;
+      overflow: hidden;
+
+
+      li{
+        width: 20%;
+        text-align: center;
+        margin-top: 20px;
+        img{
+          margin: auto;
+          width: 36px;
+          display: block;
+        }
+      }
+
+    }
+  }
+
+  .roomfy{
+    padding-bottom: 10px;
+    @include border-bottom;
+    h1{
+      font-weight: bolder;
+      font-size: 22px;
+    }
+    li{
+      list-style: none;
+      overflow: hidden;
+    }
+    .more{
+      text-align: center;
+      font-size: 18px;
+      color: #a0accb;
+      margin-top: 5px;
+    }
+
+  }
+
+  .roommate{
+    @include border-bottom;
+    padding: 20px;
+    h1{
+      font-weight: bolder;
+      font-size: 22px;
+    }
+
+    ul{
+      display: flex;
+      flex-wrap: wrap;
+
+      li{
+        text-align: center;
+        margin: 0 20px 10px 0;
+        color: #666;
+        font-size: 14px;
+      }
+    }
+  }
+
+  .qingke{
+    .top{
+      display: flex;
+      align-items: center;
+
+      .left{
+        flex: 1;
+      }
+      img{
+        width: 57px;
+        margin-right: 5px;
+      }
+      .tel{
+        text-align: center;
+        line-height: 34px;
+        width: 100px;
+        height: 34px;
+        border-radius: 15px;
+        border: 1px solid orange;
+      }
+
+    }
+    .middle{
+      span{
+        margin-right: 5px;
+        font-size: 16px;
+      }
+      i{
+        font-size: 24px;
+      }
+    }
+  }
+
+  .same,.like{
+    h1{
+      font-weight: bolder;
+      font-size: 22px;
+    }
+        ul{
+          display: flex;
+          overflow-y: auto;
+
+
+          li{
+            width: 160px;
+            // height: 210px;
+            margin-right: 10px;
+
+            h2{
+              margin-top: 5px;
+              font-size: 16px;
+              line-height: 16px;
+            }
+
+            h3{
+              color: #666;
+            }
+
+            h4{
+              font-size: 14px;
+              color: #ff7000;
+            }
+
+            img{
+              border-radius: 5px;
+              width: 160px;
+              height: 120px;
+              display: block;
+            }
+          }
+        }
+  }
+}
+
+  .footer{
+    width: 100%;
+    height: 60px;
+    background: white;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    bottom: 0;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    p{
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: center;
+    }
+
+    .order{
+      background: linear-gradient(270deg,#f9b607,#ffd003);
+      width: 150px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 20px;
+      color: white;
+      font-size:16px ;
+    }
+
+    .tel{
+      background: linear-gradient(270deg,#ff7000,#ffb117);
+      width: 150px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      border-radius: 20px;
+      align-items: center;
+      color: white;
+      font-size:16px ;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.page-login {
+  overflow: hidden;
+
+  #logo {
+    display: block;
+    width: 85px;
+    margin: 120px auto 0;
+  }
+
+  .login-form {
+    width: 70%;
+    margin: 160px auto 0;
+
+    input {
+      border-radius: 15px;
+    }
+  }
+
+  #register {
+    text-align: center;
+    font-size: 18px;
+  }
+}
