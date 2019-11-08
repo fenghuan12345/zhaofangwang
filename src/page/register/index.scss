@@ -1,0 +1,29 @@
+.page-register {
+  overflow: hidden;
+
+  #logo {
+    display: block;
+    width: 85px;
+    margin: 120px auto 0;
+  }
+
+  .register-form {
+    width: 70%;
+    margin: 160px auto 0;
+
+    input {
+      border-radius: 15px;
+    }
+
+    #yzm{
+      border-radius: 0;
+      display: inline-block;
+      width: 70%;
+    }
+  }
+
+  #login {
+    text-align: center;
+    font-size: 18px;
+  }
+}

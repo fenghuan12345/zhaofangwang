@@ -12,7 +12,7 @@ class Home extends React.Component {
     render () {
         return(
             <div className='home-page'>
-    
+
                 <Switch>
                     <Route path='/center' component={Center}></Route>
                     <Route path='/foundhouse' component={FoundHouse}></Route>
