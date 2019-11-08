@@ -41,5 +41,5 @@
     "customize-cra": "^0.8.0",
     "react-app-rewired": "^2.1.4"
   },
-  "proxy":"https://api.mgzf.com"
+  "proxy": "https://api.mgzf.com"
 }

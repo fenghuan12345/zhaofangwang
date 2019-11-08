@@ -1,0 +1,102 @@
+.top{
+  display: flex;
+  background: #f9f9f9;
+  width:100%;
+
+}
+.home{
+  margin-right: 10px;
+  text-align: center;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  padding-left: 5px;
+  padding-top: 12px;
+}
+.found{
+
+  width: 330px;
+
+}
+.found input{
+  background-color:#e8e8e9;
+  border:none;
+  outline:none;
+  padding-left: 20px;
+  padding-top: 3px;
+  padding-bottom:3px;
+  font-size:16px;
+
+}
+.found form{
+  background-color:#e8e8e9;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.top-l{
+  padding-left: 5px;
+  font-size: 19px;
+  text-align: center;
+  padding-top: 5px;
+  color:#cccccc
+}
+
+.nav ul{
+  overflow: hidden;
+  margin-top: 5px;
+}
+.nav li{
+  border: 1px solid #e8e8e9;
+  height: 26px;
+  border-radius: 3px;
+  padding:4px 10px 4px 10px;
+  font-size: 14px;
+  box-sizing: border-box;
+  line-height: 16px;
+  margin-right: 4.5px;
+  margin-left: 6px;
+  float: left;
+  margin-top: 9px;
+}
+.nav span{
+  display: block;
+  margin-left: 10px;
+  color: #cccccc;
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+.sear-record{
+  width: 358px;
+  text-align: center;
+  padding:28px 7px 2px 0px;
+  border-top: 1px solid #cccccc;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+.close{
+  margin-left: 64px;
+  color:#cccccc;
+}
+.adress li{
+  border-bottom:1px solid #cccccc ;
+  padding-bottom: 10px;
+  margin-left: 5px;
+  padding-top: 20px;
+  color: #cccccc;
+}
+.sear-history li{
+  border-bottom:1px solid #cccccc ;
+  padding-bottom: 10px;
+  margin-left: 5px;
+  padding-top: 20px;
+  color: #cccccc;
+}
+.garbage1 {
+  margin-left: 10px
+}
+.garbage2{
+  margin-left:275px;
+}
+.garbage{
+  margin-top: 20px;
+}

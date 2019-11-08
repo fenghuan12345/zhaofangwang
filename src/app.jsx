@@ -2,7 +2,7 @@ import React from 'react'
 import './global.css'
 import Detail from './page/detail/index.jsx'
 import City from './page/city/index.jsx'
-import Search from './page/search/index.jsx'
+import Searc from './page/searc/index'
 import Login from './page/login/index.jsx'
 import Register from './page/register/index.jsx'
 import Home from './page/home/index.jsx'
@@ -20,7 +20,7 @@ class App extends React.Component {
                     <Route path='/home' component={Home}></Route>
                     <AuthRoute path='/detail/:id' component={Detail}></AuthRoute>
                     <Route path='/city' component={City}></Route>
-                    <Route path='/search' component={Search}></Route>
+                    <Route path='/searc' component={Searc}></Route>
                     <Route path='/login' component={Login}></Route>
                     <Route path='/register' component={Register}></Route>
                     <Redirect to='/home'></Redirect>
